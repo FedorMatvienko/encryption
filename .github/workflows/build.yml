@@ -22,3 +22,9 @@ jobs:
           cd .build
           cmake ../RC5
           cmake --build .
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-binary
+          path: .build/RC5
