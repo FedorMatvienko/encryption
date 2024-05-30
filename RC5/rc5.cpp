@@ -13,14 +13,14 @@ const int r = 8;
 //Количество октетов (8-битных байт) в секретном ключе 0-255
 const int b = 8;//число в байтах
 template <typename T>
-T shiftL(T value,T shift)
+T shiftL(T _value,T _shift)
 {
-    return ((value)<<(shift&(w-1))) | ((value)>>(w-(shift&(w-1))));
+    return ((_value)<<(_shift&(w-1))) | ((_value)>>(w-(_shift&(w-1))));
 }
 template <typename T>
-T shiftR(T value,T shift)
+T shiftR(T _value,T _shift)
 {
-    return ((value)>>(shift&(w-1))) | ((value)<<(w-(shift&(w-1))));
+    return ((_value)>>(_shift&(w-1))) | ((_value)<<(w-(_shift&(w-1))));
 }
 void new_K( unsigned char *K)
 {
@@ -48,6 +48,6 @@ int main()
 {
     unsigned char K[b]={2,2,3,4,5,6,7,9};
     new_K(K);
-    
+
     return 0;
 }
