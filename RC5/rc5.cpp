@@ -48,6 +48,5 @@ int main()
 {
     unsigned char K[b]={2,2,3,4,5,6,7,9};
     new_K(K);
-
     return 0;
 }
