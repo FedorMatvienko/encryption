@@ -5,7 +5,8 @@ BUILD=$PWD/.build
 rm -rf $BUILD
 mkdir -p $BUILD
 cd $BUILD
+cmake ..
 #CC=clang CXX=clang++ scan-build cmake --build .
-CC=clang CXX=clang++ cmake ..
+# CC=clang CXX=clang++ cmake ..
 cmake --build .
 ./RC5
