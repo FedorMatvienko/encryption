@@ -1,4 +1,4 @@
-![Логотип]()<img src="./logo.png" width="600" height="300">
+<img src="./logo.png" width="1200" height="300">
 
 ## Состав:
 1. RC5
